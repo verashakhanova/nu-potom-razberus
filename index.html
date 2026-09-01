@@ -57,7 +57,20 @@ h5 {
 
 <img src="images/969F3377-E600-4FE7-A806-42CB1C215B83.jpeg" alt="só uma imagem que REALMENTE é meu sonho" class="entry-image">
 <h5>só uma imagem que REALMENTE é meu sonho</h5>
-  <button class="my-button">PRESSIONE</button>
+   <button class="my-button" onclick="showMessage()">MOSTRAR O TEXTO</button>
+
+<p id="secret" style="display: none;">Вот твой секретный текст!</p>
+
+<script>
+  function showMessage() {
+    let x = document.getElementById('secret');
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+  }
+</script>
 <p>So um botao para mostrar que eu fiz alguma coisa. Apenas um teste </p>
 </body>
 </html>
